@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Clara Lau</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Magnetic is a stunning responsive HTML5/CSS3 photography/portfolio website  template"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+<!--Image Hover-->
+	<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+	<script type="text/javascript">
+
+
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+</head>
+<body>
+
+	<header 
+		style= "border-right-style: solid;
+       			border-right-width: 1px;
+        		border-right-color: #f6f6f6;">
+		
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" title="Magnetic" alt="Magnetic"/></a>
+		</div><!-- end logo -->
+
+		<br><h4>Exploring UX Research</h4>
+
+			<p style= "font-family:'raleway-regular'; font-size: 80%">
+			
+				<br> Hello & welcome to my portfolio.
+				<br> It's still a work in progress 
+				<br> but thank you for visiting!
+				<br>
+				<br> よろしくお願いいたします！
+			</p>
+			</p>
+			
+
+		<div id="menu_icon"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://drive.google.com/file/d/0B0Ffazdwp1NoWWJUYUF5YlNsUDQ/view?usp=sharing" target="_blank">Resume</a></li>
+				<li><a href="contact.html">Find Me</a></li>
+			</ul>
+		</nav><!-- end navigation menu -->
+
+		<div class="footer clearfix">
+			<ul class="social clearfix">
+				<li><a href="https://ca.linkedin.com/in/clara-lau-166415a4" class="linkedin" data-title="Linkedin"></a></li>
+				<!--<li><a href="#" class="twitter" data-title="Twitter"></a></li>-->
+				<!--<li><a href="#" class="dribble" data-title="Dribble"></a></li>-->
+				<li><a href="mailto:cswlau@uwaterloo.ca" class="rss" data-title="E-mail"></a></li>
+			</ul><!-- end social -->
+
+
+			<div class="rights">
+				<p>Copyright © 2014 magnetic.</p>
+				<p>Template by <a href="">Pixelhint.com</a></p>
+			</div><!-- end rights -->
+		</div ><!-- end footer -->
+	</header><!-- end header -->
+
+	<section class="main clearfix">;
+
+		<section class="top" style="background-image: url(img/ChildPlay/header.png); background-repeatposition: repeat-x">
+			<!--<img src="img/ChildPlay/header.png"> -->
+
+			<div class="wrapper content_header clearfix">
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="#" class="previous" data-title=""></a></li>
+						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="#Connect" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<a name= "Child"><h1 class="title">Child's Play</h1></a>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+				
+				<h3 style="color:#cc1b3e">What is Child's Play?</h3>
+				Child's Play is an Adventure RPG created by 7 Deadly Sins at the <a href "https://uwaterloo.ca/games-institute/events/fall-2014-gi-jam-play">Fall 2014 GI Game Jam</a> held at uWaterloo.
+				<br> The game can be found
+					<a href="https://github.com/bunndan/GI_Jam_2014-ChildsPlay.git"> Here.</a> 
+                
+                <img src="img/ChildPlay/Main_Character_Alt.png" style="width:50%;float:right;">                                                       
+                <h3>Game Concept</h3>
+			
+				<div style="width:50%;">
+			
+				 	<h4 style="color:#248f8f; font-family:raleway-regular; opacity:0.8;">
+				 	What was just the heroine's backyward becomes a mystical forest. Worn out clothes become armor and
+					everyday items are now your weapons,
+					<br>Advance and clear the trials that await you!
+				</h4>
+
+					Game Jam Themes:<br> <b>Unorthodox Main Character</b> & <b>Symmetry</b>
+					<br>The concept was to create a game where the player can embark on an quest through the eyes children whose imaginative perceptions of the world are assymetrical to how the world objectively appears. 
+					<br><Br>Hopefully it will remind you of all those times you ran around playing make-believe as a child :)</div>
+
+
+				<h3>What I Contributed</h3>
+				As one of the  Graphic Artists on the team, I mainly worked alongside the other artist to generate character designs and create the character sprites and other visual assets.
+				In particular, I spent a good amount of time working on the sprites for the heroine:
+				<br><img  class= "fancybox" src="img/ChildPlay/mc sprite sheet.png" style="width:57%;height:57%;margin-bottom:-70px;float:left;"></img>
+				<br><img  class= "fancybox" src="img/ChildPlay/MainCharacterSprites.gif" style="width:42%;height:42%;margin-top:-20px;float:left;">
+				
+				<h4 style="margin-bottom:-2%;">Other Art Assets: (Additional credits go to <b>Monique Yu</b>)</h4>
+				<h6 style="margin-bottom:-2%;">Other Sprites: Midway Bosses and Straw Monsters</h6>
+				<br><img class="fancybox" src="img/ChildPlay/NPC_Sprites.png" style="width:40%;">
+				<img class="fancybox" src="img/ChildPlay/straw_monsters.png" style="width:40%;float:right">
+				<h6 style="margin-bottom:-2%;">Title Screen:</h6>
+				<br><img class="fancybox" src="img/ChildPlay/Treebg.gif" style="width:50%;height:50%;">
+				<img class="fancybox" src="img/ChildPlay/Title-Screen.png" style="width:50%;height:50%;float:right;">
+				<br>
+
+				<p>
+				<h3>The Game Jam Process</h3>
+				After forming our team <b style="color:#248f8f;">(3 Programmers, 2 Designers, 1 Composer and 1 person for Moral Support)</b>, we rapidly got to work brainstorming game and character ideas.
+				<h4> Tools Involved:</h4>
+				<img src="img/ChildPlay/toolsused.png">
+				<br>Throughout the Jam we wrote over the walls of QNC and on whiteboards to flesh out ideas, we stored most of the assets in a common Dropbox and worked collaboratively in the limited time we had. 
+				</p>
+
+				<br>
+                <img class="fancybox" src="img/ChildPlay/plan1.jpg" style="width:20%;">
+				<img class="fancybox" src="img/ChildPlay/photo1.jpg" style="width:20%;">
+				<img class="fancybox" src="img/ChildPlay/photo2.jpg" style="width:20%;">
+				<img class="fancybox" src="img/ChildPlay/photo3.jpg" style="width:20%;">
+				<br><br>A lot of interesting ideas came up (even though we weren't able to implement them all) but in particular my favourites are:
+
+				<div style="margin-left:10px;color:#248f8f;font-size:90%;">
+					<li> The character's all have 2 separate designs: 1 for their normal appearance and 1 alternate for how they imagine themselves to be </li>
+					<li> The Shop owner who sells you items along the way is actually.. the final boss </li>
+					<li> The added twist is: he fights you with everything you didn't buy!</li>
+					<li>The hidden final is actually the heroine's mother calling them all to go home, unfortunately you can't win. Cue the credits!</li>
+				</div>
+		
+			</div><!-- end content -->
+		</section>
+				<a name= "Connect"><section class="top", style="background-image: url(img/ConnectTap/header.png); background-repeatposition: repeat-x"></a>
+			<div class="wrapper content_header clearfix">
+
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="#Child" class="previous" data-title="Previous"></a></li>
+						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="#Nest" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<h1 class="title">ConnectTap</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+			<h2> What is ConnectTap? </h2>
+			<img src="img/ConnectTap/logo.jpg" style="width:45%;"></img>
+			<br>
+			ConnectTap is a Phone App Business Idea created by a group of Business students from the University of Waterloo and University of Laurier.
+			It is essentially a networking app that allows users to create and exchange digital business cards through wireless technology built into smart phones.
+			<h2> What did I do?</h2>
+			I volunteered to assist the group of Business students in creating an interactive prototype that would showcase the plausability and benefits of their business idea.
+			<br>
+			<b>Tools Used:</b>
+
+			<br><b>Details on the project I was given:</b>
+	
+			<br><li> The purpose of the app ( to exchange digital business cards)</li>
+			<li>The audience (people who are active networkers)</li>
+			<li> A logo design</li>
+
+
+			<b>What I created:</b>
+			<li> Screen designs in the form of simple wireframes</li>
+			<li> An interactive prototype viewable on a phone or on a laptop</li>
+			<h3> Process </h3>
+			I started by generating a list of required functions.
+			<br><u>Functions</u>
+			<div style="float:right; margin-right:20%">
+			<img src="img/ConnectTap/Exchange.jpg" >
+			<br><img src="img/ConnectTap/Exchange2.jpg">
+			<br><img src="img/ConnectTap/Exchange3.jpg">
+			</div>
+			<li>Enable the user to create a digital business card</li>
+			<li>Record the users profession and contact information</li>
+			<li>Allow users to delete and manage cards they have made in the past
+			<li>Allow user to exchange digital business cards with other people</li>
+			<li>Provide a means for the user to organize their contacts</li> 
+			<li>Enable the user to easily retrieve exchanged contact information </li>
+			<h3>Wireframes</h3>
+			I then brainstormed possible screens that would be needed and generated some simple wireframes
+			<br><br>
+			<img class="fancybox" src="img/ConnectTap/CT1.jpg"><br>
+			<img class="fancybox" src="img/ConnectTap/CT2.jpg"><br>
+			<img class="fancybox" src="img/ConnectTap/CT4.jpg"><br>
+			<img class="fancybox" src="img/ConnectTap/CT5.jpg"><br>
+
+			<h3>Interactive Prototype</h3>
+			The last step I took in this project was to refine screens and create an interactive prototype using Axure RP. 
+			<br>A demo of the prototype is showcased in the video below: 
+			<br>
+
+			<br>
+			<iframe src="https://drive.google.com/file/d/0B0Ffazdwp1NoSmtubjBnSGpDb2M/preview" width="480" height="320"></iframe>
+			<h3>Areas of Improvement </h3>
+			I took on this initiative because I wanted to become more familiar with Axure RP and the wireframing process in general.
+			Overall, due to time constraints I ended up using many pre-made icons and graphics. In the future, for similar projects I would like to challenge myself to create my own icons. Next, through this project I was able to realize the importance of screen space allocation and how the interactable space is quite limited on phones. Additionally, I feel I could have spent more time on the idea generation and brainstorming alternative screens/ solutions. To me, this project was a good starting point to understand the design process for the UI of phone applications. A next step in this project would probably be to further refine the graphics and perhaps even try to redesign some of the screens from scratch. 
+			</div><!-- end content -->
+		</section>
+
+		<a name= "Nest"><section class="top", style="background-image: url(img/Nest/header.png); background-repeatposition: repeat-x"></a>
+			<div class="wrapper content_header clearfix">
+
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="#Connect" class="previous" data-title="Previous"></a></li>
+						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="#Pixiv" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<h1 class="title">Nest Thermostat Case Study</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+			In our Human Factors in Design course, we completed a Usability project where performed various Usability assessments on a product with physical controls and a visual display.The product my group chose was the <a href="https://nest.com/ca/thermostat/meet-nest-thermostat/"> Nest Thermostat</a>; a programmable thermostat which is a great example of a Smart Home innovation.(<i>Photo from: store.nest.com</i>)
+			<br><br>
+			<a href="https://store.nest.com/assets/images/store/products/thermostat/d3/gallery/f/slide1-534b9f7617abd89c6bd8920ddc8804a7.png"><img src="https://store.nest.com/assets/images/store/products/thermostat/d3/gallery/f/slide1-534b9f7617abd89c6bd8920ddc8804a7.png" style="width:40%"></a>
+			
+			<h2> What was done?</h2>
+			<div style="float:left">
+				<img class="fancybox" src="img/Nest/Reqs.jpg" style="width:20%">
+				<img class="fancybox" src="img/Nest/Persona.jpg" style="width:20%">
+				<img class="fancybox" src="img/Nest/Current.jpg" style="width:20%">
+			</div>
+
+			The project was executed in the form of multiple design sprints. Some of the activities include:
+			<br>
+			<li>Brainstorming User Requirements</li>
+			<li>Creating Personas</li>
+			<li>Current Design Sketches</li>
+			<li>Hierarchial Task Analysis and Fault Tree Analysis</li>
+			<li>Heuristic Evaluation</li>
+			<li>A Mock Usability Test</li>
+			<li>Display and Controls Analysis</li>
+			<li>Proposing a Re-Design</li>
+
+			<h2> What did I contribute</h2>
+			Along with participating in all of the design prints, one of the main things I contributed (in terms of project deliverables) was the sketches for the current design and proposed redesign. 
+			<br>
+			<iframe src="https://docs.google.com/presentation/d/1mdgE-6dazBxFM_zLf_D6raDmILICd3H5i5W_-mJrEGI/embed?" frameborder="0" width="596" height="476" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			<h2></h2>
+
+			</div><!-- end content -->
+		</section>
+
+		<a name= "Pixiv"><section class="top", style="background-image: url(img/Pixiv/header.png); background-repeatposition: repeat-x"></a>
+			<div class="wrapper content_header clearfix">
+
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="#Nest" class="previous" data-title="Previous"></a></li>
+						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="#Lyrics" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<h1 class="title">Pixiv Usability Case Study</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+
+			This will be a case study where I assess the Usability of the <a href="">Pixiv</a> phone application.
+			It is still a WIP! Sorry for the inconvenience.
+			<img src="img/Pixiv/Loading.png" style="width:30%">
+			<img src="img/Pixiv/Profile.png" style="width:30%">
+			<img src="img/Pixiv/Search.png" style="width:30%">
+
+			<br><i> All of the content in screenshots of the app (including logos) belong to Pixiv and other affiliated parties </i>
+			
+
+			</div><!-- end content -->
+		</section>
+
+		<a name= "Lyrics"><section class="top", style="background-image: url(img/Motivation/header.png); background-repeatposition: repeat-x"></a>
+			<div class="wrapper content_header clearfix">
+
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="#Pixiv" class="previous" data-title="Previous"></a></li>
+						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="#Art" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<h1 class="title">Inspirational Lyrics</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+
+				<br>
+				One of the things that inspires me and keeps me going is definitely music. Therefore, as a chance to practice translating things and just for fun, I decided to keep track of some of my favourite lyrics here.I absolutely recommend listening to the songs the lyrics are from too! 
+
+				<br>
+				<br><img class="fancybox" src="img/Motivation/Error.png" style="width:50%;">
+				<br><a href=""> Error- niki feat. Lily </a>
+				<br>[ 壊れているの？壊れているよ　それでも息をしたい　したい ]
+				<br> Translation: <i> Are you broken? I am broken but even still, I want to keep on living, I want to keep on living</i>
+			<br>
+				<br><img class="fancybox" src="img/Motivation/outofgravity.png" style="width:70%;">
+				<br><a href=""> 1/6 -out of gravity- noa feat.初音ミク </a>
+				<br>[ いつか重力のクサリを断ち切り	
+						<br>君を連れてサテライト	
+						<br>辛いコトや悲しいコトも全部1/6 ]
+				<br> Translation: <i> Someday, I'll break through the chains of gravity and bring you to a satellite. Then the painful and sorrowful things will all be reduced to 1/6th </i>
+			<br>
+				<br><img class="fancybox" src="img/Motivation/Palette.png" style="width:65%;">
+				<br><a href=""> Palette ゆよゆっぺ feat.巡音ルカ </a>
+				<br>[ 紡ぎだす群青 廻る記憶に	
+				<br>絡まった僕らの 未来が	 色付く ]
+				<br> Translation: <i>Surrounded by the spun out ultramarine and revolving memories, Our future takes on colour</i>
+
+			</div><!-- end content -->
+		</section>
+
+		<a name= "Art"><section class="top", style="background-image: url(img/Art/header.png); background-repeatposition: repeat-x"></a>
+			<div class="wrapper content_header clearfix">
+
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="#Lyrics" class="previous" data-title="Previous"></a></li>
+						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="#" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<h1 class="title">Art</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+
+			Here is just a collection of my random doodles and art~
+			<br>
+			<img class="fancybox" src="img/art/Banner.png" style="width:auto">
+			<img class="fancybox" src="img/art/making.gif" style="width:auto">
+			<img class="fancybox" src="img/art/WIP.jpg" style="width:auto">
+			<iframe src="https://drive.google.com/file/d/0B0Ffazdwp1NoMVpaMzVYdGlSajg/preview" width="850" height="460"></iframe>
+			<img class="fancybox" src="img/art/KH.jpg" style="width:auto">
+
+
+
+			</div><!-- end content -->
+		</section>
+
+
+	</section><!-- end main -->
+	
+</body>
+</html>
