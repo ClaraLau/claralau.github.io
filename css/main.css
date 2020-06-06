@@ -413,18 +413,18 @@ a.closehover:hover {
 
 /*  Inner Page  */
 .top{
-    width: 89.9%;
-    height: 250px;
+    width: 91.6%;
+    height: 100px;
     overflow: hidden;
     display: block;
     position: relative;
-    background: url('') no-repeat;
+    background: transparent;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: 50% 50%;
-    margin-left:5.1%;
+    margin-left:3.6%;
 }
 
 .work_nav{
@@ -476,7 +476,7 @@ a.closehover:hover {
     font-family: "Helvetica", arial;
     font-size: 32px;
     font-weight: normal;
-    background: rgba(255, 255, 255, .7);
+    background: #e5e5e5;
     padding: 20px;
     text-transform: uppercase;
     line-height: 30px;
@@ -502,7 +502,7 @@ a.closehover:hover {
     width:97%;
     color: #4b4848;
     font-family: "raleway-regular", arial;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 22px;
     padding: 30px 30px;
     background: #fff;
