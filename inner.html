@@ -12,32 +12,9 @@
     <script type="text/javascript" src="js/main.js"></script>
 
 <!--Image Hover-->
-	<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
-	<script type="text/javascript">
-
-
-    $(function($){
-        var addToAll = false;
-        var gallery = true;
-        var titlePosition = 'inside';
-        $(addToAll ? 'img' : 'img.fancybox').each(function(){
-            var $this = $(this);
-            var title = $this.attr('title');
-            var src = $this.attr('data-big') || $this.attr('src');
-            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-            $this.wrap(a);
-        });
-        if (gallery)
-            $('a.fancybox').attr('rel', 'fancyboxgallery');
-        $('a.fancybox').fancybox({
-            titlePosition: titlePosition
-        });
-    });
-    $.noConflict();
-</script>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script type="text/javascript"> </script>
 </head>
 <body>
 
@@ -107,16 +84,16 @@
 			<div class="content" style="padding-left:-15px">
 				<br>
 			   <h1> Project Overview </h1>
-			   <div style="width:80%">
-			   <div style="width:70%; float:left" >
+			   <div style="width:auto;">
+			   <div style="width:auto; max-width:60%; float:left" >
 			   <b> Dates:</b> January - April 2020
 			   <br> <b> Description:</b> How does the sound chosen for mobile emergency alerts (e.g. Amber alerts, environmental hazard warnings) influence how a person interacts with the alert message displayed on-screen? This study examines participant reactions to 3 alert sounds and discusses recommendations to improve mobile emergency alert sound design. 
 			   <br>
 			   <br> <b> Team Members: </b> 2 peers taking the MSCI 630 graduate-level Human Computer Interaction course run by Professor Mark Hancock
-			   <br> <b> My Contributions:</b> I participated in all stages of the experiment design including the initial literature review, participant recruitment, pilot study and lab study facilitation, and statistical analysis. 
+			   <br></br> <b> My Contributions:</b> I participated in all stages of the experiment design including the initial literature review, participant recruitment, pilot study and lab study facilitation, and statistical analysis. 
 			   <br>
 			   </div>
-			   <div style="float:right">
+			   <div style="width:auto; max-width:40%; float:left;margin-left:5%;margin-bottom:5%">
 			   <br> <b> Methods Used</b>: 
 			   <br>
 			   <li> Within-participants Lab Study</li>
@@ -127,24 +104,22 @@
 			   <li> PANAS Questionnaire</li>
 			   <li> ANOVA & Post-hoc Analysis</li>
 			   </div> </div>
-			   <br></br>
-			   <br></br>
-			   <br></br>
-			   <br></br>
-			   <br></br>
+
+			   <div style="position:relative; clear: both">
 			   <br>
 			   <h1> Abstract </h1>
 					Canada launched Alert Ready, an emergency alert system
 					that directly communicates emergency warnings and
 					information to citizens via their personal mobile devices, in
-					2015. However, the system has received a large volume of criticism. One
-					the major criticisms from citizens, as found in a
-					nationwide survey performed on November 27, 2019, was
-					the need to improve the sound of the alerts. A lab study was
+					2015 but has received a large volume of criticism. Some of
+					the major criticism from the citizens as found by a
+					nationwide survey performed on November 27, 2019, were
+					the need to improve the sound ofthe alerts. A lab study was
 					conducted to investigate how participants perceived and
 					interacted with simulated mobile alert messages with three
-					different sounds (a siren, a chime, and text-to-speech message) while engaged in a gaming task.
-					Participants' reaction and dismissal times were recorded during the study. They were provided a
+					different sounds (Siren, Chime and Text-to-speech) while engaged in a gaming task.
+					Participants were particularly observed for reactions and
+					dismissal times during the study. They were provided a
 					post-task questionnaire to report their perceived annoyance,
 					perceived urgency, and positive and negative affect after
 					the task. Results found significant differences in dismissal
@@ -160,51 +135,80 @@
 					<br><br> <b> Figures & Tables: </b> 
 					<br>
 					
-					<img class="fancybox" src="img/HCI/Figure1-3.png" style="width:13%"><a href="img/HCI/Figure5.png" class="fancybox" rel="fancyboxgallery"></a>
-					<a href="img/HCI/Figure6.png" class="fancybox" rel="fancyboxgallery"><img class="fancybox" src="img/HCI/Figure5.png" style="width:13%"></a>
-					<a href="img/HCI/Figure6.png" class="fancybox" rel="fancyboxgallery"><img class="fancybox" src="img/HCI/Table2.png" style="width:13%"></a>
-					<a href="img/HCI/Figure7.png" class="fancybox" rel="fancyboxgallery"><img class="fancybox" src="img/HCI/Figure6.png" style="width:13%"></a>
-					<a href="img/HCI/Figure8.png" class="fancybox" rel="fancyboxgallery"><img class="fancybox" src="img/HCI/Figure7.png" style="width:13%"></a>
-					<a href="img/HCI/Figure9.png" class="fancybox" rel="fancyboxgallery"><img class="fancybox" src="img/HCI/Figure8.png" style="width:9%"></a>
-					<a href="img/HCI/Figure1-3.png" class="fancybox" rel="fancyboxgallery"><img class="fancybox" src="img/HCI/Figure9.png" style="width:13%"></a>
+					
+					<a href="img/HCI/Figure1-3.png" class="fancybox" data-fancybox="hciGallery" ><img class="fancybox" src="img/HCI/Figure1-3.png" style="width:13%"></a>
+					<a href="img/HCI/Figure5.png" class="fancybox" data-fancybox="hciGallery"><img class="fancybox" src="img/HCI/Figure5.png" style="width:13%"></a>
+					<a href="img/HCI/Table2.png" class="fancybox" data-fancybox="hciGallery"><img class="fancybox" src="img/HCI/Table2.png" style="width:13%"></a>
+					<a href="img/HCI/Figure6.png" class="fancybox" data-fancybox="hciGallery"><img class="fancybox" src="img/HCI/Figure6.png" style="width:13%"></a>
+					<a href="img/HCI/Figure7.png" class="fancybox" data-fancybox="hciGallery"><img class="fancybox" src="img/HCI/Figure7.png" style="width:13%"></a>
+					<a href="img/HCI/Figure8.png" class="fancybox" data-fancybox="hciGallery"><img class="fancybox" src="img/HCI/Figure8.png" style="width:9%"></a>
+					<a href="img/HCI/Figure9.png" class="fancybox" data-fancybox="hciGallery"><img class="fancybox" src="img/HCI/Figure9.png" style="width:13%"></a>
 					
 					<br></br>
 					<a href= "https://drive.google.com/file/d/12BvtkndZe1ggO63eBGerF3jZbsQAA16u/view?usp=sharing"> <h3 style= "color:#5EB3BA;" > Click here to read the full paper </h3> </a>
-					
+					</div>
 			   
 			</div><!-- end content -->
 		</section>
+
 		<a name= "Park"><section class="top"></a>
 			<div class="wrapper content_header clearfix">
 
 				<div class="work_nav">
 							
 					<ul class="btn clearfix">
-						<li><a href="#Nest" class="previous" data-title="Previous"></a></li>
+						<li><a href="#HCI" class="previous" data-title="Previous"></a></li>
 						<li><a href="index.html" class="grid" data-title="Portfolio"></a></li>
 						<li><a href="#Beacon" class="next" data-title="Next"></a></li>
 					</ul>							
 					
 				</div><!-- end work_nav -->
-				<h1 class="title" style="background:#75B6E5; color:#ffffff">Smart Parking User Research</h1>
+				<h1 class="title" style="background:#01CFFF; color:#fff">Smart Parking UR Portfolio</h1>
 			</div>		
 		</section><!-- end top -->
 
 		<section class="wrapper">
-			<div class="content">
-			    <img src="img/Park/Slide1.PNG"></img>
-				<img src="img/Park/Slide2.PNG"></img>
-				<img src="img/Park/Slide3.PNG"></img>
-				<img src="img/Park/Slide4.PNG"></img>
-				<img src="img/Park/Slide5.PNG"></img>
-				<img src="img/Park/Slide6.PNG"></img>
-				<img src="img/Park/Slide7.PNG"></img>
-				<img src="img/Park/Slide8.PNG"></img>
-				<img src="img/Park/Slide9.PNG"></img>
-				<img src="img/Park/Slide10.PNG"></img>
-				<img src="img/Park/Slide11.PNG"></img>
-				<img src="img/Park/Slide12.PNG"></img>
+		
+			<div class="content" style="padding-left:-15px">
+				<br></br>
+			    <img src="img/Park/Slide1.PNG" style="width:100%;">
 			
+				
+			   <h1> Project Overview </h1>
+			   <div style="width: auto">
+			   <div style="width:auto; max-width:60%; float:left" >
+			   <b> Dates:</b> January - April 2018
+			   <br> <b> Description:</b> The availability and management of parking spaces plays a large role in accommodating traffic in large cities. In 2011 IBM performed a Global Parking Survey in 20 of the world’s busiest urban cities including New Delhi, Beijing, Paris and Toronto. (“IBM Global Parking Survey: Drivers Share Worldwide Parking Woes”, 2011)  Based on other reports and its own findings, it states that: 30% of urban traffic is made up of people looking for parking  More than 50% of respondents reported having abandoned their search for parking. To address this problem, there has been increased interest in deploying smart parking systems that provide parking availability information, adaptive pricing schemes, parking reservation services or e-payment for parking. (Smart Cities Implementing a Smart Parking Eco-System, 2016). 
+			   <br></br>This project, submitted for a course on User Centered Design Methods, aims to use various primary and secondary user-centered design methods to explore the user experience and usability associated with parking related technologies. This includes existing signs, parking meters and software products that help users locate empty parking spaces, pay for parking or manage parking areas. 
+			   </div>
+			   <div style="width:auto; max-width:40%; float:left;margin-left:5%;margin-bottom:5%">
+			   <br> <b> Methods Used</b>: 
+			   <br>
+			   <li> Personas</li>
+			   <li> User Journey Map</li>
+			   <li> Card Sorting</li>
+			   <li> Interviews </li>
+			   <li> 10-second Test </li>
+			   <li> Heuristic Evaluation</li>
+			   <li> Value Opportunity Analysis</li>
+			   </div> </div>
+
+				<div style="position:relative; clear: both; margin-top: 250px">
+
+					
+					<br><br> <b> Work Samples: </b> 
+					<br> e.g. Personas, User Journey Map, etc... 
+					<br></br>
+					
+					<a href="img/Park/Slide5.PNG" class="fancybox" data-fancybox="parkGallery" ><img class="fancybox" src="img/Park/Slide5.PNG" style="width:13%"></a>
+					<a href="img/Park/Slide6.PNG" class="fancybox" data-fancybox="parkGallery"><img class="fancybox" src="img/Park/Slide6.PNG" style="width:13%"></a>
+					<a href="img/Park/Slide7.PNG" class="fancybox" data-fancybox="parkGallery"><img class="fancybox" src="img/Park/Slide7.PNG" style="width:13%"></a>
+					<a href="img/Park/Slide8.PNG" class="fancybox" data-fancybox="parkGallery"><img class="fancybox" src="img/Park/Slide8.PNG" style="width:13%"></a>
+					<a href="img/Park/Slide9.PNG" class="fancybox" data-fancybox="parkGallery"><img class="fancybox" src="img/Park/Slide9.PNG" style="width:13%"></a>
+					<br></br>
+					<a href= "https://drive.google.com/file/d/1O4TiJzknHqgMku4D9L1bhZDpIrPn5xGD/view?usp=sharing"> <h3 style= "color:#5EB3BA;" > Click here to see the full portfolio </h3> </a>
+					
+			   </div>
 			</div><!-- end content -->
 		</section>
 
@@ -226,23 +230,60 @@
 		</section><!-- end top -->
 
 		<section class="wrapper">
-			<div class="content">
-			    <img src="img/Beacon/Slide1.PNG"></img>
-				<img src="img/Beacon/Slide2.PNG"></img>
-				<img src="img/Beacon/Slide3.PNG" style="margin-top:-5%"></img>
-				<img src="img/Beacon/Slide7.PNG"></img>
-				<img src="img/Beacon/Slide6.PNG"></img>
-				<img src="img/Beacon/Slide5.PNG"></img>
-				<img src="img/Beacon/Slide8.PNG"></img>
-				<img src="img/Beacon/Slide9.PNG" style="margin-bottom:-5%"></img>
-				<a href="https://www.figmacrush.com/toxin-free-figma-ui-kit" target="_blank">
-					<img src="img/Beacon/Slide10.PNG"></img>
-					</a>
-				<a href="https://uwaterloo.ca/engineering/entrepreneurship/funding/palihapitiya-venture-creation-fund" target="_blank">
-					<img src="img/Beacon/Slide11.PNG"></img>
-					</a>
 			
+			<div class="content" style="padding-left:-15px">
+				<br>
+				<img src="img/Beacon/Slide1.PNG" style="width:100%"></img>
+				<br>
+			   <h1> Project Overview </h1>
+			   <div style="width:auto;">
+			   <div style="width:auto; max-width:70%; float:left" >
+			   <b> Dates:</b> September - April 2019
+			   <br> <b> Description:</b> Beacon Health was a Systems Design Engineering capstone project to design a recommender system to be implemented on post-secondary school websites and used by students to improve access to mental health resources by recommending the most appropriate service available and measuring improvement with validated scales. Two of the team members, Oscar Lo and Lily Ren, moved forward with the project as an entrepreneur idea and they successfully received one of two awards from the <a href="https://uwaterloo.ca/engineering/entrepreneurship/funding/palihapitiya-venture-creation-fund" target="_blank">2019 Palihapitiya Venture Creation Fund</a>.
+			   <br>
+			   <br> <b> Team Members: </b> 4 senior Systems Design Engineering Students from the University of Waterloo supervised by Professor Igor Ivkovic
+			   <br><br> <b> My Contributions:</b> I participated in all stages of the iterative design cycle, created wireframes to show to users and counsellors, and designed and facilitated user testing activities.
+			   <br>
+			   </div>
+			   <div style="width:auto; max-width:30%; float:left;margin-left:5%;margin-bottom:5%">
+			   <br> <b> Methods Used</b>: 
+			   <br>
+			   <li> Surveys</li>
+			   <li> Expert Interviews</li>
+			   <li> Design Sprint</li>
+			   <li> Wireframes </li>
+			   <li> Expert Testing </li>
+			   <li> SUS Evaluation </li>
+			   <br> <b> Tools Used</b>: 
+			   <br>
+			   <li> Figma </li>
+			   <li> HTML/CSS </li>
+			   <li> JS, Node</li>
+			   <li> PowerPoint</li>
+			   </div> </div>
+
+			   <div style="position:relative; clear: both; margin-top: 250px">
+
+				<img src="img/Beacon/Slide3.PNG" style="margin-top:5px;width:80%; padding-left:10px"></img>
+
+			   
+					<br></br> 
+					<br><b> Work Samples:</b> 
+					<br> e.g. System Diagram, Wireframes, Early Designs, Final Design 
+					<br></br>
+					<a href="img/Beacon/Slide7.PNG" class="fancybox" data-fancybox="beaconGallery" ><img class="fancybox" src="img/Beacon/Slide7.PNG" style="width:13%"></a>
+					<a href="img/Beacon/Slide4.PNG" class="fancybox" data-fancybox="beaconGallery" ><img class="fancybox" src="img/Beacon/Slide4.PNG" style="width:13%"></a>
+					<a href="img/Beacon/Slide5.PNG" class="fancybox" data-fancybox="beaconGallery" ><img class="fancybox" src="img/Beacon/Slide5.PNG" style="width:13%"></a>
+					<a href="img/Beacon/Slide9.PNG" class="fancybox" data-fancybox="beaconGallery" ><img class="fancybox" src="img/Beacon/Slide9.PNG" style="width:13%"></a>
+					<a href="img/Beacon/Slide10.PNG" class="fancybox" data-fancybox="beaconGallery" ><img class="fancybox" src="img/Beacon/Slide10.PNG" style="width:13%"></a>
+	
+					
+					<br></br>
+					<a href= "https://drive.google.com/file/d/1F2ZtGHJZ95wL9HKAYW-WVdyyXpwZNHLv/view?usp=sharing"> <h3 style= "color:#5EB3BA;" > Click here to see an overview of the project </h3> </a>
+					</div>
+			   
 			</div><!-- end content -->
+			
 		</section>
 		
 		
@@ -264,25 +305,71 @@
 
 		<section class="wrapper">
 			<div class="content">
-				<img src="img/CTA/Slide1.PNG"></img>
-				<img src="img/CTA/Slide2.PNG"></img>
-				<img src="img/CTA/Slide3.PNG"></img>
-				<img src="img/CTA/Slide4.PNG"></img>
-				<img src="img/CTA/Slide5.PNG"></img>
-				<img src="img/CTA/Slide6.PNG"></img>
-				<img src="img/CTA/Slide7.PNG"></img>
-				<img src="img/CTA/Slide8.PNG"></img>
-				<img src="img/CTA/Slide9.PNG"></img>
-				<img src="img/CTA/Slide10.PNG"></img>
+				<br>
+				<img src="img/CTA/Slide1.PNG" style="width:100%"></img>
+				<br>
+			   <h1> Project Overview </h1>
+			   <div style="width:auto;">
+			   <div style="width:auto; max-width:70%; float:left" >
+			   <b> Dates:</b> January - April 2020
+			   <br>
+			   <br> <b> Description:</b> 
+			   <br>This cognitive engineering course project presents the results of a cognitive task analysis (CTA) performed with pedestrian experts to understand how pedestrians make decisions at night and make actionable recommendations to improve night safety. 
+			   <br>
+			   <br> <b> Problem Space: </b> 
+			   <br><img src = "img/CTA/Slide0.png" style="width:50%; padding:15px">
+			   <br>According to a 2013 WHO report, a large percentage of pedestrian fatalities across the world occur at night. In the US, 72% of all pedestrian fatalities in 2013 occured in the dark (NHTSA, 2015). Various safety precautions can be taken to improve night pedestrian safety (e.g. wearing reflective clothing, carrying a personal alarm, etc...) yet these precautionary measures are not always adopted. Pedestrians follow a naturalistic decision making process which can be studied using cognitive engineering methods. Understanding pedestrian behaviour from a user-centered, cognitive angle can help to find more persuasive ways to promote night walking safety.
+			   
+			   <br><br> <b> Outcomes:</b> 
+			   <li> Navigation applications such as Google Maps should develop a method to recommend routes based on the perceived level of safety rather than proximity, and develop tools to help users better imagine the state of the recommended path (e.g. whether it is far from a main road, well-lit, etc...) 
+			   <br><br>
+			   <li> Pedestrians assess safety based on lighting and the number or nature of the people in the surroundings.When they think about pedestrian safety, they are more concerned about motor vehicles than other pedestrians. </li>
+			  <br>
+			  <li> Once pedestrians have commited to a chosen path, they are unlikely to turn around even if the chosen path is unsettling or "sketchy" and therefore interventive measures must be taken before or at the moment of choosing the path </li>
+			  <br>
+			   <li> Common alternatives to walking alone that pedestrians consider are walking with friends, calling an Uber or getting a ride from an acquaintance. They are more likely to choose these methods if they have recently had an unpleasant experience while walking alone. </li> 
+			   <br>
+			   </div>
+			   <div style="width:auto; max-width:30%; float:left;margin-left:5%;margin-bottom:5%">
+			   <br> <b> Methods Used</b>: 
+			   <br>
+			   <li> Cognitive Task Analysis</li>
+			   <li> Concept Mapping</li>
+			   <li> CDM</li>
+			   <li> Deepening Probes</li>
+			   <li> Unstructured Interviews </li>
+			   <li> Thematic Analysis </li>
+			   <br> <b> Tools Used</b>: 
+			   <br>
+			   <li> Cmap Tools</li>
+			   </div> </div>
 
+			   <div style="position:relative; clear: both; margin-top: 250px">
+
+					<br><b> Work Samples:</b> 
+					<br> e.g. CTA procedure, Concept Maps, CDM Timelines, etc...
+					<br></br>
+					<a href="img/CTA/Slide2.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide2.PNG" style="width:13%"></a>
+					<a href="img/CTA/Slide3.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide3.PNG" style="width:13%"></a>
+					<a href="img/CTA/Slide4.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide4.PNG" style="width:13%"></a>
+					<a href="img/CTA/Slide5.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide5.PNG" style="width:13%"></a>
+					<a href="img/CTA/Slide6.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide6.PNG" style="width:13%"></a>
+					<br>
+					<a href="img/CTA/Slide7.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide7.PNG" style="width:13%"></a>
+					<a href="img/CTA/Slide8.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide8.PNG" style="width:13%"></a>
+					<a href="img/CTA/Slide9.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide9.PNG" style="width:13%"></a>
+					<a href="img/CTA/Slide10.PNG" class="fancybox" data-fancybox="ctaGallery" ><img class="fancybox" src="img/CTA/Slide10.PNG" style="width:13%"></a>
 
 			<br></br>
+			
 			<b>Images used:</b>
+			<div style="font-size:11px">
 			<br>https://media2.govtech.com/images/940*630/GT1219_YIR_StreetLights.jpg 
 			<br>https://images.glaciermedia.ca/polopoly_fs/1.23087789.1510162745!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/be-bright.jpg 
 			<br>https://mobsea.com/appimg/Cutting-Edge-Technologies-Soon-to-be-Used-in-Cars/8.jpg 
 			<br>https://americanfitnessindex.org/wp-content/uploads/2019/10/Halloween-pedestrian-safety-tips-infographic.jpg 
 			<br>https://p0.piqsels.com/preview/710/38/410/couple-near-car-during-night-time.jpg 
+			</div>
 
 			</div><!-- end content -->
 		</section>
