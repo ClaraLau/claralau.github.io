@@ -1,4 +1,4 @@
-# claralau.github.io
+# User Research and Design Portfolio| claralau.github.io
 Hello! This is a repo for my portfolio.
 Feel free to browse the page to see my user research and design work.
 
