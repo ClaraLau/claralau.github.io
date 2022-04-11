@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #131313;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -122,7 +122,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
+		color: #000000;
 		font-weight: 400;
 	}
 
@@ -137,7 +137,7 @@ input, select, textarea {
 	
 	h1, h2 {
 		color: #000;
-		font-weight: 400;
+		font-weight: 600;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -150,7 +150,7 @@ input, select, textarea {
 
 	h3, h4, h5, h6 {
 		color: #253C71;
-		font-weight: 400;
+		font-weight: 600;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -2300,9 +2300,6 @@ input, select, textarea {
 			width: calc(100% + 1em);
 		}
 
-			ul.actions.fit li {
-			}
-
 				ul.actions.fit li > * {
 					width: 100%;
 				}
@@ -2446,11 +2443,11 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
-		border: solid 3px #efefef;
-		color: #787878 !important;
+		border: solid 2px #253C71;
+		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 400;
+		font-weight: 600;
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
@@ -2466,7 +2463,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		.button:hover {
 			border-color: #FFBC61;
-			color: #FFBC61 !important;
+			color: rgb(83, 83, 83) !important;
+			font-weight:600;
 		}
 
 		input[type="submit"]:active,
@@ -2474,8 +2472,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: #D6DFFC;
-			border-color: #636D87;
-			color: #636D87 !important;
+			border-color: #000000;
+			color: #000000 !important;
 		}
 
 		input[type="submit"].icon,
